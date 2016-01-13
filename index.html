@@ -12,7 +12,19 @@
     <div class="row">
       <div class="large-12 columns">
         <h1>Welcome to IBM!</h1>
+        <a data-toggle="videoModal">Play Video</a>
       </div>
+    </div>
+
+    <div class="full reveal" id="videoModal" data-reveal>
+      <div class="row">
+        <div class="flex-video widescreen align-middle">
+          <iframe src="https://www.youtube.com/embed/39jtNUGgmd4" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+      <button class="close-button" type="button" data-close aria-label="Close reveal">
+        <span aria-hidden="true">&times;</span>
+      </button>
     </div>
 
     <!-- Things you must do -->
@@ -31,12 +43,23 @@
     </div>
     
     <!-- Good to Know -->
-    <div class="row">
-      <div class="large-4 small-12 columns">
+    <div class="row collapse" data-equalizer>
+      <div class="medium-4 small-12 columns">
+        <div class="callout" data-equalizer-watch>
+          <p>This is a test. This is the first box, one with a primary button in it, and it has a good bit more text than the others.</p>
+          <button type="button" class="button expanded">Primary</button>
+        </div>
       </div>
-      <div class="large-4 small-12 columns">
+      <div class="medium-4 small-12 columns">
+        <div class="callout" data-equalizer-watch>
+          <p>This is a test. This box is the second one, and it has a secondary button in it</p>
+          <button type="button" class="button secondary hollow expanded">Secondary</button>
+        </div>
       </div>
-      <div class="large-4 small-12 columns">
+      <div class="medium-4 small-12 columns">
+        <div class="callout" data-equalizer-watch>
+          <p>The third box!</p>
+        </div>
       </div>
     </div>
 
