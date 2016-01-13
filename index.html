@@ -1,84 +1,244 @@
 <!doctype html>
 <html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to IBM</title>
-    <link rel="stylesheet" href="css/app.css">
-  </head>
-  <body>
-    <div class="top-bar">
-      <div class="top-bar-left">
-        <img src="img/ibm_logo.png">
-      </div>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to IBM</title>
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <div class="top-bar">
+    <div class="top-bar-left">
+      <img src="img/ibm_logo.png">
     </div>
-    <!-- Welcome -->
-    <div class="row text-center">
-      <div class="large-12 columns">
-        <h1>Hello <span data-flavor="firstName"></span>!</h1>
-        <h3>See you in</h3>
-        <div class="row" id="countdown">
-          <div class="large-3 small-3 columns">
-            <h2 class="row days">
-            </h2>
-            <h2 class="row">
-              Days
-            </h2>
-          </div>
-          <div class="large-3 small-3 columns">
-            <h2 class="row hours">
-            </h2>
-            <h2 class="row">
-              Hrs
-            </h2>
-          </div>
-          <div class="large-3 small-3 columns">
-            <h2 class="row minutes">
-            </h2>
-            <h2 class="row">
-              Min
-            </h2>
-          </div>
-          <div class="large-3 small-3 columns">
-            <h3 class="row seconds">
-            </h3>
-            <h3 class="row">
-              Sec
-            </h3>
-          </div>
+  </div>
+  <!-- Welcome -->
+  <div class="row text-center">
+    <div class="large-12 columns">
+      <h1>Hello <span data-flavor="firstName"></span>!</h1>
+      <h3>See you in</h3>
+      <div class="row" id="countdown">
+        <div class="large-3 small-3 columns">
+          <h2 class="row days">
+          </h2>
+          <h2 class="row">
+            Days
+          </h2>
         </div>
-        <button class="button" type="button" data-toggle="videoModal"><i class="fi-play"></i>Learn about us</button>
+        <div class="large-3 small-3 columns">
+          <h2 class="row hours">
+          </h2>
+          <h2 class="row">
+            Hrs
+          </h2>
+        </div>
+        <div class="large-3 small-3 columns">
+          <h2 class="row minutes">
+          </h2>
+          <h2 class="row">
+            Min
+          </h2>
+        </div>
+        <div class="large-3 small-3 columns">
+          <h3 class="row seconds">
+          </h3>
+          <h3 class="row">
+            Sec
+          </h3>
+        </div>
+      </div>
+      <button class="button" type="button" data-toggle="videoModal"><i class="fi-play"></i>Learn about us</button>
+    </div>
+  </div>
+
+  <div class="full reveal" style="background-color: #000;" id="videoModal" data-reveal>
+    <div class="flex-video widescreen" id="oneHundredVideo">
+      <iframe src="https://www.youtube.com/embed/39jtNUGgmd4" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <button class="close-button" type="button" data-close aria-label="Close reveal" id="videoClose">
+
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+
+  <!-- Things you must do -->
+  <div class="row" data-equalizer>
+    <hr>
+    <h3>Things You Should Do Now</h3>
+
+    <h4>Identify</h4>
+    <div class="row">
+     <div class="small-12 medium-6 columns" data-equalizer-watch>
+      <img src="" alt="">
+      <h5>Benefits</h5>
+      <p>IBM Benefits rock and we can’t wait to take
+        care of you! We know that the current
+        brochure can be confusing and in need of
+        some serious Design Thinking.</p>
+        <a href=""><i class="fi-x-circle"></i>Review IBM’s Benefit Options</a>
+      </div>
+
+      <div class="small-12 medium-6 columns" data-equalizer-watch>
+       <img src="" alt="">
+       <h5>Taxes</h5>
+       <p>Prepare for Tax Forms by understanding your
+        deductions (W4). We know it’s not fun…</p>
+        <a href=""><i class="fi-x-circle"></i>Review IBM’s Benefit Options</a>
+      </div>
+    </div>
+    <hr>
+
+    <h4>Decide</h4>
+    <div class="row">
+     <div class="small-4 medium-2 columns">
+       <img src="" alt="">
+     </div>
+     <div class="small-8 medium-10 columns">
+       <h5>Relocation</h5>
+       <p>(Yay moving party!) If you’re relocating, IBM’s third-party
+        partner, Graebel, will contact you. If you haven’t heard from
+        them yet, remain calm. It can take up to two weeks from the time
+        you accepted. If two weeks have already gone by, reach out to
+        <a href="mailto:cfincun@us.ibm.com">Cat</a> (cfincun@us.ibm.com) and we’ll get things taken care of. </p>
       </div>
     </div>
 
-    <div class="full reveal" style="background-color: #000;" id="videoModal" data-reveal>
-      <div class="flex-video widescreen" id="oneHundredVideo">
-        <iframe src="https://www.youtube.com/embed/39jtNUGgmd4" frameborder="0" allowfullscreen></iframe>
+    <div class="row">
+     <div class="small-4 medium-2 columns">
+       <img src="" alt="">
+     </div>
+     <div class="small-8 medium-10 columns">
+       <h5>Mailing Address</h5>
+       <p>Where do you want us to send you your first big paycheck?
+        Have an address lined up to put that money in the bank.
+        Cha-Ching!</p>
       </div>
-      <button class="close-button" type="button" data-close aria-label="Close reveal" id="videoClose">
-
-        <span aria-hidden="true">&times;</span>
-      </button>
     </div>
- 
 
-    <!-- Things you must do -->
-    <div class="row" data-equalizer>
-      <hr>
-      <h3>Things you must do</h3>
-      <div class="callout small-12 medium-4 columns" data-equalizer-watch>
-        <h5>Hello</h5>
+    <div class="row">
+     <div class="small-4 medium-2 columns">
+       <img src="" alt="">
+     </div>
+     <div class="small-8 medium-10 columns">
+       <h5>Emergency Contact</h5>
+       <p>Who’s going to save you when the caffeine can’t? Prepare
+        emergency contacts with names and numbers</p>
       </div>
-      <div class="callout small-12 medium-4 columns" data-equalizer-watch>
-      </div>
-      <div class="callout small-12 medium-4 columns" data-equalizer-watch>
-      </div>
-
-
     </div>
+
     
-    <!-- Good to Know -->
+
+
+    <h4>Bring These on Day 1</h4>
+    <div class="row">
+
+     <div class="small-12 medium-4 columns">
+       <img src="" alt="">
+       <h5>Passport</h5>
+       <p>If you don’t have your passport,
+        you’ll need your License, Birth
+        Certificate and Social Security
+        Card. Two of Three, please.</p>
+      </div>
+      <div class="small-12 medium-4 columns">
+       <img src="" alt="">
+       <h5>Proof of Graduation</h5>
+       <p>If you graduated within the past two
+        years we’ll need an Official
+        Transcript from your Alma Mater (or
+        a note from your Mother).</p>
+      </div>
+      <div class="small-12 medium-4 columns">
+       <img src="" alt="">
+       <h5>Bancking Info</h5>
+       <p>If having checks mailed to you isn’t
+        your thing, have your bank routing
+        number available… so you can start
+        bringing home the bacon.</p>
+      </div>
+
+    </div>
+
+    <div class="row">
+     <div class="small-12 medium-6 medium-offset-3">
+      * placement text :Lorem ipsum dolor sit amet, consectetur adipscing elit.nullam condimetium sem congue diam ultricies, et aaccumsan lectus blandit
+    </div>
+  </div>
+
+</div> <!--end of things you should do now-->
+
+<!--adam quote section-->
+<div class="row">
+  <h1>"Hit hader, dig deeper"</h1>
+  <h5>–Adam cutler, Overlord</h5>
+</div>
+<!--end of adam quote section-->
+
+<!-- start of Get Inspired-->
+
+<div class="row">
+  <h3>Get Inspired</h3>
+
+  <div class="row">
+   <div class="small-12 medium-4 columns">
+    <h5>Career</h5>
+    <p>So where do you go from here? Upward and ever onward! Just as there is a path to becoming an IBM Fellow for entry-level software engineers, sellers, data scientists, researchers etc...There's a path for designers too.</p>
+    <a href=""><i class="fi-x-circle"></i>View Career Guide Ladder</a>
+  </div>
+  <div class="small-12 medium-4 columns">
+    <img src="" alt="">
+  </div>
+  <div class="small-12 medium-4 columns">
+    <h5>Design Language</h5>
+    <p>Explore the guidelines for making delightful products and experiences. From colors to code, create beautiful software with visceral impact. This is how we bring designs to life with bold elements and engaging interactions.</p>
+    <a href=""><i class="fi-x-circle"></i>IBM Design Language</a><br>
+    <a href=""><i class="fi-x-circle"></i>Design Thinking Guide</a>
+  </div>
+
+
+
+  <div class="small-12 medium-4 columns">
+    <img src="" alt="">
+  </div>
+  <div class="small-12 medium-4 columns">
+    <h5>Places</h5>
+    <p>"Spontaneous meetings anywhere and everywhere. Workspaces that move and shift as teams need them to. Comfy couches for quiet concentration, and hundreds of feet of whiteboards. In spaces built for collaboration, our designer learn, practice and teach new ways of thinking about design."</p>
+    <a href=""><i class="fi-x-circle"></i>View Our Studios</a>
+  </div>
+  <div class="small-12 medium-4 columns">
+    <img src="" alt="">
+  </div>
+</div>
+
+<!--culture-->
+<div class="row">
+ <div class="small-12 medium-8 columns">
+  <h5>Culture</h5>
+  <p>For more thn a century as products, technologies, and eras have come and gone IBMers have been animated by an enduring purpose — to be essential.</p>
+</div>
+<div class="small-12 medium-4 columns">
+  <a href=""><i class="fi-x-circle"></i>View Our Studios</a>
+  <a href=""><i class="fi-x-circle"></i>View Our Studios</a>
+</div>
+</div>
+</div>
+
+<div class="row">
+ <div class="flex-video small-12 medium-8 medium-offset-2 columns">
+  <iframe width="420" height="315" src="https://www.youtube.com/embed/39jtNUGgmd4" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+
+
+
+
+</div>
+
+
+
+<!-- Good to Know -->
 <!--     <div class="row collapse" data-equalizer>
       <div class="medium-4 small-12 columns">
         <div class="callout" data-equalizer-watch>
@@ -113,4 +273,4 @@
     <script src="bower_components/foundation-sites/dist/foundation.js"></script>
     <script src="js/app.js"></script>
   </body>
-</html>
+  </html>
