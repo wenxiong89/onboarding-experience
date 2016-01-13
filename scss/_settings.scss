@@ -47,11 +47,11 @@
 $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
-$primary-color: #2199e8;
+$primary-color: #9855d4;
 $secondary-color: #777;
-$success-color: #3adb76;
+$success-color: #4B8400;
 $warning-color: #ffae00;
-$alert-color: #ec5840;
+$alert-color: #E71D32;
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
@@ -308,7 +308,7 @@ $dropdownmenu-border: 1px solid $medium-gray;
 // 18. Flex Video
 // --------------
 
-$flexvideo-margin-bottom: rem-calc(16);
+$flexvideo-margin-bottom: 0;
 $flexvideo-ratio: 4 by 3;
 $flexvideo-ratio-widescreen: 16 by 9;
 
