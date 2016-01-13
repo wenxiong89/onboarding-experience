@@ -8,21 +8,55 @@
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
-    <!-- Header with video -->
-    <div class="row">
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <img src="img/ibm_logo.png">
+      </div>
+    </div>
+    <!-- Welcome -->
+    <div class="row text-center">
       <div class="large-12 columns">
-        <h1>Welcome to IBM!</h1>
-        <a data-toggle="videoModal">Play Video</a>
+        <h1>Hello <span data-flavor="firstName"></span>!</h1>
+        <h3>See you in</h3>
+        <div class="row" id="countdown">
+          <div class="large-3 small-3 columns">
+            <h2 class="row days">
+            </h2>
+            <h2 class="row">
+              Days
+            </h2>
+          </div>
+          <div class="large-3 small-3 columns">
+            <h2 class="row hours">
+            </h2>
+            <h2 class="row">
+              Hrs
+            </h2>
+          </div>
+          <div class="large-3 small-3 columns">
+            <h2 class="row minutes">
+            </h2>
+            <h2 class="row">
+              Min
+            </h2>
+          </div>
+          <div class="large-3 small-3 columns">
+            <h3 class="row seconds">
+            </h3>
+            <h3 class="row">
+              Sec
+            </h3>
+          </div>
+        </div>
+        <button class="button" type="button" data-toggle="videoModal"><i class="fi-play"></i>Learn about us</button>
       </div>
     </div>
 
-    <div class="full reveal" id="videoModal" data-reveal>
-      <div class="row">
-        <div class="flex-video widescreen align-middle">
-          <iframe src="https://www.youtube.com/embed/39jtNUGgmd4" frameborder="0" allowfullscreen></iframe>
-        </div>
+    <div class="full reveal" style="background-color: #000;" id="videoModal" data-reveal>
+      <div class="flex-video widescreen" id="oneHundredVideo">
+        <iframe src="https://www.youtube.com/embed/39jtNUGgmd4" frameborder="0" allowfullscreen></iframe>
       </div>
-      <button class="close-button" type="button" data-close aria-label="Close reveal">
+      <button class="close-button" type="button" data-close aria-label="Close reveal" id="videoClose">
         <span aria-hidden="true">&times;</span>
       </button>
     </div>
@@ -32,7 +66,7 @@
     </div>
     
     <!-- Good to Know -->
-    <div class="row collapse" data-equalizer>
+<!--     <div class="row collapse" data-equalizer>
       <div class="medium-4 small-12 columns">
         <div class="callout" data-equalizer-watch>
           <p>This is a test. This is the first box, one with a primary button in it, and it has a good bit more text than the others.</p>
@@ -50,7 +84,7 @@
           <p>The third box!</p>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- Culture -->
     <div class="row">
