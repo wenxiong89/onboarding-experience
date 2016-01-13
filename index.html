@@ -6,107 +6,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to IBM</title>
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="assets/foundation-icons/foundation-icons.css">
   </head>
   <body>
+    <!-- Nav bar -->
     <div class="top-bar">
-      <div class="top-bar-left">
-        <img src="img/ibm_logo.png">
+      <div class="row">
+        <div class="top-bar-left">
+          <img src="assets/img/ibm_logo.png" width="100">
+        </div>
       </div>
     </div>
-    <!-- Welcome -->
+
+    <!-- Hello -->
     <div class="row text-center">
       <div class="large-12 columns">
         <h1>Hello <span data-flavor="firstName"></span>!</h1>
         <h3>See you in</h3>
         <div class="row" id="countdown">
-          <div class="large-3 small-3 columns">
-            <h2 class="row days">
-            </h2>
-            <h2 class="row">
+          <h2>
+            <div class="large-3 small-3 columns">
+              <span class="stat days"></span>
+              <br>
               Days
-            </h2>
-          </div>
-          <div class="large-3 small-3 columns">
-            <h2 class="row hours">
-            </h2>
-            <h2 class="row">
+            </div>
+            <div class="large-3 small-3 columns">
+              <span class="stat hours"></span>
+              <br>
               Hrs
-            </h2>
-          </div>
-          <div class="large-3 small-3 columns">
-            <h2 class="row minutes">
-            </h2>
-            <h2 class="row">
+            </div>
+            <div class="large-3 small-3 columns">
+              <span class="stat minutes"></span>
+              <br>
               Min
-            </h2>
-          </div>
-          <div class="large-3 small-3 columns">
-            <h3 class="row seconds">
-            </h3>
-            <h3 class="row">
+            </div>
+            <div class="large-3 small-3 columns">
+              <span class="stat seconds"></span>
+              <br>
               Sec
-            </h3>
-          </div>
+            </div>
+          </h2>
         </div>
-        <button class="button" type="button" data-toggle="videoModal"><i class="fi-play"></i>Learn about us</button>
+        <button class="button" type="button" data-toggle="videoModal"><i class="fi-play"></i> &nbsp;Learn about us</button>
       </div>
     </div>
 
+    <!-- Welcome -->
+    <div class="row">
+      <div class="medium-8 small-12 columns">
+        <h1>Welcome!</h1>
+        <p>We know you’re excited to learn, hone your skills and tackle some challenging problems. You’re probably wondering, “Great, where do I start?! Throw it all at me!” That’s the spirit - welcome to the club, fellow studioer.</p>
+        <p>Below are some steps you need to take to maintain momentum going into your first day at IBM Design.</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Quote -->
+    <div class="row">
+      <div class="large-12 columns">
+        <blockquote>
+          &ldquo;Hit harder, dig deeper&rdquo;
+          <cite>Adam Cutler</cite>
+        </blockquote>
+      </div>
+    </div>
+
+    <!-- Get Inspired -->
+<!--     <div class="row">
+      <div class="large-12 columns">
+        <h2>Get Inspired</h2>
+        <div class="row" data-equalizer>
+          <div class="medium-4 small-12 columns">
+            <div class="row" data-equalizer-watch>
+              <div class="large-12 columns">
+                <h4 class="subheader">Career</h4>
+                <p>So where do you go from here? Upward and ever onward! Just as there is a path to becoming an IBM Fellow for entry-level software engineers, sellers, data scientists, researchers etc... there’s a path for designers too.</p>
+                <a><i class="fi-right-arrow"></i> View Career Guide Ladder</a>
+              </div>
+            </div>
+            <div class="row" data-equalizer-watch>
+              <div class="large-12 columns" style="background-color: #aaa;">
+              </div>
+            </div>
+          </div>
+          <div class="medium-4 small-12 columns">
+            <div class="row" data-equalizer-watch>
+              <div class="large-12 columns">
+                <h4 class="subheader">Career</h4>
+                <p>So where do you go from here? Upward and ever onward! Just as there is a path to becoming an IBM Fellow for entry-level software engineers, sellers, data scientists, researchers etc... there’s a path for designers too.</p>
+                <a><i class="fi-right-arrow"></i> View Career Guide Ladder</a>
+              </div>
+            </div>
+            <div class="row" data-equalizer-watch>
+              <div class="large-12 columns" style="background-color: #aaa;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    
+    <!-- Video modal -->
     <div class="full reveal" style="background-color: #000;" id="videoModal" data-reveal>
       <div class="flex-video widescreen" id="oneHundredVideo">
         <iframe src="https://www.youtube.com/embed/39jtNUGgmd4" frameborder="0" allowfullscreen></iframe>
       </div>
-      <button class="close-button" type="button" data-close aria-label="Close reveal" id="videoClose">
-
+      <button class="close-button button" type="button" data-close aria-label="Close reveal" id="videoClose">
         <span aria-hidden="true">&times;</span>
       </button>
     </div>
- 
-
-    <!-- Things you must do -->
-    <div class="row" data-equalizer>
-      <hr>
-      <h3>Things you must do</h3>
-      <div class="callout small-12 medium-4 columns" data-equalizer-watch>
-        <h5>Hello</h5>
-      </div>
-      <div class="callout small-12 medium-4 columns" data-equalizer-watch>
-      </div>
-      <div class="callout small-12 medium-4 columns" data-equalizer-watch>
-      </div>
-
-
-    </div>
-    
-    <!-- Good to Know -->
-<!--     <div class="row collapse" data-equalizer>
-      <div class="medium-4 small-12 columns">
-        <div class="callout" data-equalizer-watch>
-          <p>This is a test. This is the first box, one with a primary button in it, and it has a good bit more text than the others.</p>
-          <button type="button" class="button expanded">Primary</button>
-        </div>
-      </div>
-      <div class="medium-4 small-12 columns">
-        <div class="callout" data-equalizer-watch>
-          <p>This is a test. This box is the second one, and it has a secondary button in it</p>
-          <button type="button" class="button secondary hollow expanded">Secondary</button>
-        </div>
-      </div>
-      <div class="medium-4 small-12 columns">
-        <div class="callout" data-equalizer-watch>
-          <p>The third box!</p>
-        </div>
-      </div>
-    </div> -->
-
-    <!-- Culture -->
-    <div class="row">
-    </div>
-
-    <!-- Fun -->
-    <div class="row">
-    </div>
-    
 
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/what-input/what-input.js"></script>
