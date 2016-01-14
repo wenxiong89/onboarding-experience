@@ -63,10 +63,10 @@ section#welcome {
 
 section#decide {
 	background-color: $light-gray;
+}
 
-	.item:not(:last-child) {
-		margin-bottom: rem-calc(40);
-	}
+.stacked-margin:not(:last-child) {
+	margin-bottom: rem-calc(40);
 }
 
 #introVideo {
