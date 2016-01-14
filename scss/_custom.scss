@@ -17,25 +17,6 @@ section#hello {
 	}
 }
 
-#countdown {
-	max-width: rem-calc(800);
-	margin: 0 auto;
-	text-transform: uppercase;
-
-	.stat {
-		font-family: $header-font-family;
-		font-size: 5em;
-
-		@include breakpoint(small down) {
-			font-size: 3em;
-		}
-	}
-
-	.num:not(:last-child) {
-		border-right: 1px solid $white;
-	}
-}
-
 section#welcome {
 	background-color: $warning-color;
 	color: $black;
@@ -65,8 +46,51 @@ section#decide {
 	background-color: $light-gray;
 }
 
-.stacked-margin:not(:last-child) {
-	margin-bottom: rem-calc(40);
+section#in-the-life {
+	hr {
+		width: rem-calc(60);
+		border: 1px solid $dark-gray;
+		margin: rem-calc(40) 0 rem-calc(10);
+	}
+
+	.links {
+		hr {
+			margin: rem-calc(-16) 0 rem-calc(10) auto;
+		}
+	}
+}
+
+section#inspired {
+	img {
+		margin-bottom: rem-calc(30);
+	}
+}
+
+section#feel-confused {
+	background-color: $light-gray;
+
+	h4 {
+		margin-bottom: rem-calc(30);
+	}
+}
+
+#countdown {
+	max-width: rem-calc(800);
+	margin: 0 auto;
+	text-transform: uppercase;
+
+	.stat {
+		font-family: $header-font-family;
+		font-size: 5em;
+
+		@include breakpoint(small down) {
+			font-size: 3em;
+		}
+	}
+
+	.num:not(:last-child) {
+		border-right: 1px solid $white;
+	}
 }
 
 #introVideo {
@@ -86,6 +110,26 @@ section#decide {
 	border-radius: 0;
 }
 
+#playVideo {
+	padding: rem-calc(6) rem-calc(24) rem-calc(16);
+
+	i {
+		font-size: 2em;
+		position: relative;
+		top: rem-calc(5);
+		margin-left: rem-calc(6);
+	}
+}
+
+#adam-quote {
+    background: url("../assets/img/Quote-image.png") no-repeat center center;
+    background-size: cover;
+}
+
+#adam-quote-2 {
+	background-color: $alert-color;
+}
+
 h1, h2 {
 	font-weight: bold;
 }
@@ -100,6 +144,14 @@ a {
 
 p {
 	font-weight: bold;
+}
+
+.stacked-margin:not(:last-child) {
+	margin-bottom: rem-calc(40);
+}
+
+.round-image img {
+	border-radius: 50%;
 }
 
 .section-header {
@@ -167,26 +219,6 @@ button {
 	font-size: 2em;
 }
 
-#playVideo {
-	padding: 0 inherit rem-calc(16) rem-calc(24);
-
-	i {
-		font-size: 2em;
-		position: relative;
-		top: rem-calc(5);
-		margin-left: rem-calc(6);
-	}
-}
-
-#adam-quote {
-    background: url("../assets/img/Quote-image.png") no-repeat center center;
-    background-size: cover;
-}
-
-#adam-quote-2 {
-	background-color: $alert-color;
-}
-
 blockquote {
 	border: none;
 	color: $white;
@@ -213,23 +245,29 @@ blockquote {
 	}
 }
 
-// .content-descrip {
-// 	padding: rem-calc(15) rem-calc(35) 0 !important;
-// }
 
-#a-day {
-	hr {
-		width: rem-calc(60);
-		border: 1px solid $dark-gray;
-		margin: rem-calc(40) 0 rem-calc(10);
-	}
-
-	.links {
-		hr {
-			margin: rem-calc(-16) 0 rem-calc(10) auto;
-		}
-	}
+/*
+#hello {
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+    background-position:center-top;
+    background-position-x: 50%;
+    background-position-y: 0%;
+    -webkit-animation: zoomin 25s 1;
 }
+
+
+@-webkit-keyframes zoomin {
+    0% {
+        -webkit-transform: scale(1);
+    }
+    100% {
+        -webkit-transform: scale(1.2);
+    }
+
+}
+*/
 
 
 
