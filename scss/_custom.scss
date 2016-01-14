@@ -1,3 +1,5 @@
+
+
 section {
 	padding: rem-calc(80) 0;
 }
@@ -183,8 +185,6 @@ p {
 	width: 100%;
 	margin-top: 0 !important;
 
-	background-color: $black;
-
 	a {
 		color: $white;
 	}
@@ -196,7 +196,22 @@ p {
 	object {
 		fill-color: $white;
 	}
+
+	background-color: transparent;
+	transition: background-color .3s;
+
+	&.hide-nav{
+		background-color: transparent;
+	}
+
+	&.show-nav{
+		background-color: $black;
+	}
+	img{
+		padding:rem-calc(8) 0;
+	}
 }
+
 
 .header {
 	margin-bottom: rem-calc(60);
