@@ -72,6 +72,15 @@ section#feel-confused {
 	h4 {
 		margin-bottom: rem-calc(30);
 	}
+
+	h5 {
+		margin-bottom: rem-calc(6);
+	}
+
+	a {
+		display: inline-block;
+		margin-bottom: rem-calc(6);
+	}
 }
 
 #countdown {
@@ -245,6 +254,10 @@ blockquote {
 	}
 }
 
+footer{
+	height:100px;
+	background: $black;
+}
 
 /*
 #hello {
