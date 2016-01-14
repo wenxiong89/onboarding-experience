@@ -167,15 +167,19 @@ button {
 
 }
 
-#adam-quote{
+#adam-quote {
     background: url("../assets/img/Quote-image.png") no-repeat center center;
     background-size: cover;
     padding: rem-calc(100) 0;
+}
 
-	blockquote {
-		border: none;
-		color: $white;
-	}
+#adam-quote-2 {
+	background-color: $alert-color;
+}
+
+blockquote {
+	border: none;
+	color: $white;
  	
  	cite {
 		font-family: $header-font-family;
@@ -207,10 +211,12 @@ button {
 	padding:15px 35px 0 35px !important;
 }
 
-#a-day .columns hr {
-	width: 3rem;
-	border:1px solid $dark-gray;
-	margin: 3rem 0 1rem;
+#a-day {
+	hr {
+		width: rem-calc(60);
+		border:1px solid $dark-gray;
+		margin: 3rem 0 1rem;
+	}
 }
 
 
