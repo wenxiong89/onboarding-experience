@@ -1,3 +1,7 @@
+section {
+	padding: rem-calc(80) 0;
+}
+
 section#hello {
 	padding: rem-calc(100) 0;
 	color: $white;
@@ -33,8 +37,6 @@ section#hello {
 }
 
 section#welcome {
-	padding: rem-calc(120) 0;
-
 	background-color: $warning-color;
 	color: $black;
 
@@ -59,31 +61,8 @@ section#welcome {
 	}
 }
 
-section#todo {
-	padding: rem-calc(80) 0;
-
-	
-}
-
 section#decide {
 	background-color: $light-gray;
-	padding: rem-calc(80) 0;
-}
-
-section#to-bring {
-	padding: rem-calc(80) 0;
-}
-
-.section-header {
-	h5 {
-		max-width: rem-calc(600);
-		margin: 0 auto;
-	}
-
-	hr {
-		max-width: rem-calc(400);
-		margin: rem-calc(60) auto;
-	}
 }
 
 #oneHundredVideo {
@@ -103,6 +82,18 @@ section#to-bring {
 
 #videoClose {
 	border-radius: 0;
+}
+
+.section-header {
+	h5 {
+		max-width: rem-calc(600);
+		margin: 0 auto;
+	}
+
+	hr {
+		max-width: rem-calc(400);
+		margin: rem-calc(60) auto;
+	}
 }
 
 h1, h2 {
