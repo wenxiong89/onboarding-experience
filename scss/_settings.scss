@@ -47,15 +47,15 @@
 $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
-$primary-color: #00b39f;
-$secondary-color: #6d7877;
-$success-color: #5aa845;
-$warning-color: #f47737;
-$alert-color: #f05253;
-$light-gray: #c8d2d2;
-$medium-gray: #6d7877;
-$dark-gray: #323c3c;
-$black: #020404;
+$primary-color: #41d6c3;
+$secondary-color: #af6ee8;
+$success-color: #8cd211;
+$warning-color: #fdd600;
+$alert-color: #ff5050;
+$light-gray: #f2f2f2;
+$medium-gray: #c8d2d2;
+$dark-gray: #2d3737;
+$black: #142936;
 $white: #fff;
 $body-background: $white;
 $body-font-color: $black;
@@ -226,14 +226,14 @@ $breadcrumbs-item-slash: true;
 // 11. Button
 // ----------
 
-$button-padding: 0.85em 1em;
+$button-padding: 0.8em 1.5em;
 $button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
 $button-background: $primary-color;
 $button-background-hover: scale-color($button-background, $lightness: -15%);
 $button-color: #fff;
 $button-color-alt: #000;
-$button-radius: $global-radius;
+$button-radius: rem-calc(30);
 $button-sizes: (
   tiny: 0.6rem,
   small: 0.75rem,

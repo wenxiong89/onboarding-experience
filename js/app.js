@@ -34,7 +34,7 @@ function initializeClock(id, endtime){
 
     var timeinterval = setInterval(function(){
         var t = getTimeRemaining(endtime);
-        
+
         days.innerHTML    = t.days;
         hours.innerHTML   = ('0' + t.hours).slice(-2);
         minutes.innerHTML = ('0' + t.minutes).slice(-2);
@@ -60,4 +60,6 @@ $('[data-flavor="firstName"]').html(personalInfo.firstName);
 /* Initialize the countdown timer */
 if (personalInfo.startDate) {
 	initializeClock("countdown", personalInfo.startDate);
+} else {
+    document.getElementById('countdown').classList.add('hide');
 }

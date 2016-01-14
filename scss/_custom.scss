@@ -1,3 +1,64 @@
+#hello {
+	padding: rem-calc(100) 0;
+	color: $white;
+	background: url(../assets/img/countdown_bg.png) no-repeat center center;
+	background-size: cover;
+
+	h1 {
+		margin-bottom: rem-calc(80);
+	}
+
+	h5 {
+		margin: rem-calc(20) 0 rem-calc(80);
+	}
+}
+
+#countdown {
+	max-width: rem-calc(800);
+	margin: 0 auto;
+	text-transform: uppercase;
+
+	.stat {
+		font-family: $header-font-family;
+		font-size: 5em;
+
+		@include breakpoint(small down) {
+			font-size: 3em;
+		}
+	}
+
+	.num:not(:last-child) {
+		border-right: 1px solid $white;
+	}
+}
+
+#welcome {
+	padding: rem-calc(120) 0;
+
+	background-color: $primary-color;
+	color: #fff;
+
+	hr {
+		width: rem-calc(80);
+		border: 1px solid $white;
+		margin: rem-calc(40) 0 rem-calc(20);
+	}
+
+	img {
+		border-radius: rem-calc(180);
+
+
+	}
+
+	@include breakpoint(small down) {
+			padding: rem-calc(60) 0;
+
+		img {
+			margin-bottom: rem-calc(60);
+		}
+	}
+}
+
 #oneHundredVideo {
 	top: 50%;
 	transform: translateY(-50%);
@@ -13,8 +74,52 @@
 	right: 0;
 }
 
+#videoClose {
+	border-radius: 0;
+}
+
+h1, h2 {
+	font-weight: bold;
+}
+
+h4, h5, h6 {
+	font-family: $body-font-family;
+}
+
+a {
+	font-weight: bold;
+}
+
 .top-bar {
+	width: 100%;
+	margin-top: 0 !important;
+
+	background-color: $black;
+
+	a {
+		color: $white;
+	}
+
+	ul {
+		background-color: transparent;
+	}
+
 	object {
-		fill-color: #fff;
+		fill-color: $white;
 	}
 }
+
+button {
+	text-transform: uppercase;
+	font-weight: bold;
+
+	font-size: 2em;
+	
+	.fi-play-video {
+		font-size: 2em;
+	}
+}
+
+#playVideo {
+}
+
