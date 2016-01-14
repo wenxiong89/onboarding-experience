@@ -1,4 +1,4 @@
-#hello {
+section#hello {
 	padding: rem-calc(100) 0;
 	color: $white;
 	background: url(../assets/img/countdown_bg.png) no-repeat center center;
@@ -32,7 +32,7 @@
 	}
 }
 
-#welcome {
+section#welcome {
 	padding: rem-calc(120) 0;
 
 	background-color: $primary-color;
@@ -56,6 +56,20 @@
 		img {
 			margin-bottom: rem-calc(60);
 		}
+	}
+}
+
+section#todo {
+	padding: rem-calc(80) 0;
+
+	h5 {
+		max-width: rem-calc(600);
+		margin: 0 auto;
+	}
+
+	hr {
+		max-width: rem-calc(400);
+		margin: rem-calc(60) auto;
 	}
 }
 
@@ -109,17 +123,20 @@ a {
 	}
 }
 
+.accent {
+	display: inline-block;
+	color: $primary-color;
+	border-bottom: 2px solid $primary-color;
+}
+
 button {
 	text-transform: uppercase;
 	font-weight: bold;
 
 	font-size: 2em;
-	
-	.fi-play-video {
-		font-size: 2em;
-	}
 }
 
 #playVideo {
+
 }
 
