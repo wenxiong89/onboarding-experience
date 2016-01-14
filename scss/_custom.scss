@@ -35,12 +35,12 @@ section#hello {
 section#welcome {
 	padding: rem-calc(120) 0;
 
-	background-color: $primary-color;
-	color: #fff;
+	background-color: $warning-color;
+	color: $black;
 
 	hr {
 		width: rem-calc(80);
-		border: 1px solid $white;
+		border: 1px solid $black;
 		margin: rem-calc(40) 0 rem-calc(20);
 	}
 
@@ -62,6 +62,19 @@ section#welcome {
 section#todo {
 	padding: rem-calc(80) 0;
 
+	
+}
+
+section#decide {
+	background-color: $light-gray;
+	padding: rem-calc(80) 0;
+}
+
+section#to-bring {
+	padding: rem-calc(80) 0;
+}
+
+.section-header {
 	h5 {
 		max-width: rem-calc(600);
 		margin: 0 auto;
@@ -123,10 +136,25 @@ a {
 	}
 }
 
-.accent {
-	display: inline-block;
-	color: $primary-color;
-	border-bottom: 2px solid $primary-color;
+.header {
+	h3 {
+		color: $secondary-color;
+	}
+
+	.accent {
+		display: inline-block;
+		border-bottom: 3px solid $secondary-color;
+	}
+
+	&.header-2 h3 {
+		color: $success-color;
+		border-color: $success-color;
+	}
+
+	&.header-3 h3 {
+		color: $alert-color;
+		border-color: $alert-color;
+	}
 }
 
 button {
