@@ -167,11 +167,11 @@ button {
 	blockquote {
 		margin: 100px 0 100px 0;
 		border: none;
-		color: white;
+		color: $white;
 	}
  	
  	cite {
-		color:white;
+		color:$white;
 		font-family: $header-font-family;
 		font-style: normal;
 		font-size: 2em;
@@ -183,6 +183,15 @@ button {
 
 .section-top{
 	padding-top:80px;
+}
+
+.content-descrip{
+	padding:15px 35px 0 35px !important;
+}
+#a-day .columns hr{
+	width: 3rem;
+	border:1px solid $dark-gray;
+	margin: 3rem 0 1rem;
 }
 
 
