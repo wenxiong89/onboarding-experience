@@ -46,17 +46,28 @@ section#decide {
 	background-color: $light-gray;
 }
 
+section#to-bring, section#decide {
+	img {
+		display: block;
+		max-height: rem-calc(100);
+		width: auto;
+		margin: 0 auto rem-calc(30);
+	}
+}
+
 section#in-the-life {
 	hr {
 		width: rem-calc(60);
 		border: 1px solid $dark-gray;
 		margin: rem-calc(40) 0 rem-calc(10);
 	}
+}
 
-	.links {
-		hr {
-			margin: rem-calc(-16) 0 rem-calc(10) auto;
-		}
+section#culture {
+	hr {
+		width: rem-calc(60);
+		border: 1px solid $dark-gray;
+		margin: rem-calc(-16) 0 rem-calc(10) auto;
 	}
 }
 

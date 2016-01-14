@@ -51,7 +51,7 @@ function initializeClock(id, endtime){
 var personalInfo = {
 	firstName: getParameterByName("fn") || "IBMer",
 	lastName: getParameterByName("ln") || null,
-	startDate: new Date(getParameterByName("sd")) || null
+	startDate: getParameterByName("sd") || null
 }
 
 /* Add name for flavor */
@@ -59,7 +59,7 @@ $('[data-flavor="firstName"]').html(personalInfo.firstName);
 
 /* Initialize the countdown timer */
 if (personalInfo.startDate) {
-	initializeClock("countdown", personalInfo.startDate);
+	initializeClock("countdown", new Date(personalInfo.startDate));
 } else {
     document.getElementById('countdown').classList.add('hide');
 }
