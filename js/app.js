@@ -63,3 +63,14 @@ if (personalInfo.startDate) {
 } else {
     document.getElementById('countdown').classList.add('hide');
 }
+
+var $top = $('.top-bar');
+
+/* change the nav bar*/
+$(window).scroll(function() {
+    if( $(window).scrollTop() > 0 ) {
+        $top.addClass('show-nav').removeClass('hide-nav');
+    } else {
+        $top.addClass('hide-nav').removeClass('show-nav');
+    }
+});
