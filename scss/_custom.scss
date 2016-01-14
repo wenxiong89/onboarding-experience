@@ -211,25 +211,19 @@ blockquote {
 	padding:15px 35px 0 35px !important;
 }
 
-#a-day {
-	hr {
-		width: rem-calc(60);
-		border:1px solid $dark-gray;
-		margin: 3rem 0 1rem;
-	}
+
+
+#feel-confused h5 {
+    margin-bottom:0;
 }
-#a-day .columns hr.no-top{
-	margin:0;
-	float:right;
+#feel-confused .small-8.columns{
+    line-height: 1.9em;
 }
-.group-top{
-	padding-top:30px;
-}
-#feel-confused{
-	background:#f8f8f8;
-}
-#feel-confused .group-top img {
-    border-radius:50%;
+
+
+footer{
+	height:100px;
+	background: $black;
 }
 
 
