@@ -114,6 +114,10 @@ p {
 	}
 }
 
+.section-top {
+	padding-top: rem-calc(60);
+}
+
 .top-bar {
 	width: 100%;
 	margin-top: 0 !important;
@@ -164,13 +168,19 @@ button {
 }
 
 #playVideo {
+	padding: 0 inherit rem-calc(16) rem-calc(24);
 
+	i {
+		font-size: 2em;
+		position: relative;
+		top: rem-calc(5);
+		margin-left: rem-calc(6);
+	}
 }
 
 #adam-quote {
     background: url("../assets/img/Quote-image.png") no-repeat center center;
     background-size: cover;
-    padding: rem-calc(100) 0;
 }
 
 #adam-quote-2 {
@@ -203,24 +213,22 @@ blockquote {
 	}
 }
 
-.section-top {
-	padding-top:80px;
-}
-
-.content-descrip {
-	padding:15px 35px 0 35px !important;
-}
+// .content-descrip {
+// 	padding: rem-calc(15) rem-calc(35) 0 !important;
+// }
 
 #a-day {
 	hr {
 		width: rem-calc(60);
-		border:1px solid $dark-gray;
-		margin: 3rem 0 1rem;
+		border: 1px solid $dark-gray;
+		margin: rem-calc(40) 0 rem-calc(10);
 	}
-}
-#a-day .columns hr.no-top{
-	margin:0;
-	float:right;
+
+	.links {
+		hr {
+			margin: rem-calc(-16) 0 rem-calc(10) auto;
+		}
+	}
 }
 
 
