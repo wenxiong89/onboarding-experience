@@ -63,6 +63,10 @@ section#welcome {
 
 section#decide {
 	background-color: $light-gray;
+
+	.item:not(:last-child) {
+		margin-bottom: rem-calc(40);
+	}
 }
 
 #introVideo {
@@ -78,22 +82,8 @@ section#decide {
 
 	top: 0;
 	right: 0;
-}
 
-#videoClose {
 	border-radius: 0;
-}
-
-.section-header {
-	h5 {
-		max-width: rem-calc(600);
-		margin: 0 auto;
-	}
-
-	hr {
-		max-width: rem-calc(400);
-		margin: rem-calc(60) auto;
-	}
 }
 
 h1, h2 {
@@ -106,6 +96,22 @@ h4, h5, h6 {
 
 a {
 	font-weight: bold;
+}
+
+p {
+	font-weight: bold;
+}
+
+.section-header {
+	h5 {
+		max-width: rem-calc(600);
+		margin: 0 auto;
+	}
+
+	hr {
+		max-width: rem-calc(400);
+		margin: rem-calc(60) auto;
+	}
 }
 
 .top-bar {
@@ -164,22 +170,32 @@ button {
 #adam-quote{
     background: url("../assets/img/Quote-image.png") no-repeat center center;
     background-size: cover;
-    min-height:400px;
+    padding: rem-calc(100) 0;
 
 	blockquote {
-		margin: 100px 0 100px 0;
 		border: none;
-		color: white;
+		color: $white;
 	}
  	
  	cite {
-		color:white;
 		font-family: $header-font-family;
 		font-style: normal;
 		font-size: 2em;
+		color: $white;
 	}
-	h2{
+
+	h2 {
 		 font-size: 4em;
+	}
+
+	@include breakpoint(small down) {
+		h2 {
+			font-size: 3em;
+		}
+
+		cite {
+			font-size: 1.5em;
+		}
 	}
 }
 
