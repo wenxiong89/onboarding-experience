@@ -35,15 +35,17 @@ function initializeClock(id, endtime){
     var timeinterval = setInterval(function(){
         var t = getTimeRemaining(endtime);
 
+        if(t.total < 0){
+            t = getTimeRemaining(new Date());
+            clearInterval(timeinterval);
+        }
+
         days.innerHTML    = t.days;
         hours.innerHTML   = ('0' + t.hours).slice(-2);
         minutes.innerHTML = ('0' + t.minutes).slice(-2);
         seconds.innerHTML = ('0' + t.seconds).slice(-2);
 
-        if(t.total<=0){
-          clearInterval(timeinterval);
-        }
-    },1000);
+    }, 1000);
 }
 
 
@@ -74,3 +76,5 @@ $(window).scroll(function() {
         $top.addClass('hide-nav').removeClass('show-nav');
     }
 });
+
+$('#hello').addClass('visible');

@@ -1,7 +1,7 @@
 
 
 section {
-	padding: rem-calc(80) 0;
+	padding: rem-calc(100) 0;
 }
 
 section#hello {
@@ -12,10 +12,32 @@ section#hello {
 
 	h1 {
 		margin-bottom: rem-calc(80);
+
+		transition: opacity 2s;
 	}
 
 	h5 {
 		margin: rem-calc(20) 0 rem-calc(80);
+
+		transition: opacity 2s ease 1.7s;
+	}
+
+	button {
+		transition: opacity 2s ease 2.5s;
+	}
+
+	#countdown {
+		transition: opacity 2s ease 1s;
+	}
+
+	h1, #countdown, h5, button {
+		opacity: 0;
+	}
+
+	&.visible {
+		h1, #countdown, h5, button {
+			opacity: 1;
+		}
 	}
 }
 
@@ -103,6 +125,7 @@ section#feel-confused {
 
 	.stat {
 		font-family: $header-font-family;
+		font-weight: bold;
 		font-size: 5em;
 
 		@include breakpoint(small down) {
@@ -143,13 +166,37 @@ section#feel-confused {
 	}
 }
 
-#adam-quote {
+#quote {
     background: url("../assets/img/Quote-image.png") no-repeat center center;
     background-size: cover;
+
+    h2 {
+    	font-size: 2.5em;
+    }
+
+	@include breakpoint(small down) {
+		h2 {
+			font-size: 2em;
+		}
+
+		cite {
+			font-size: 1.5em;
+		}
+	}
 }
 
-#adam-quote-2 {
+#quote-2 {
 	background-color: $alert-color;
+
+	h2 {
+		font-size: 4em;
+	}
+
+	@include breakpoint(small down) {
+		h2 {
+			font-size: 3em;
+		}
+	}
 }
 
 h1, h2 {
@@ -177,11 +224,6 @@ p {
 }
 
 .section-header {
-	h5 {
-		max-width: rem-calc(600);
-		margin: 0 auto;
-	}
-
 	hr {
 		max-width: rem-calc(400);
 		margin: rem-calc(60) auto;
@@ -208,19 +250,28 @@ p {
 		fill-color: $white;
 	}
 
+	img {
+		padding:rem-calc(8) 0;
+		width: rem-calc(140);
+
+		transition: width .3s;	
+	}
+
 	background-color: transparent;
 	transition: background-color .3s;
 
-	&.hide-nav{
+	&.hide-nav {
 		background-color: transparent;
 	}
 
-	&.show-nav{
+	&.show-nav {
 		background-color: $black;
+
+		img {
+			width: rem-calc(120);
+		}
 	}
-	img{
-		padding:rem-calc(8) 0;
-	}
+
 }
 
 
@@ -265,15 +316,7 @@ blockquote {
 		color: $white;
 	}
 
-	h2 {
-		 font-size: 4em;
-	}
-
 	@include breakpoint(small down) {
-		h2 {
-			font-size: 3em;
-		}
-
 		cite {
 			font-size: 1.5em;
 		}
