@@ -327,6 +327,11 @@ footer{
 	height:100px;
 	background: $black;
 }
+
+.life-blurb {
+	padding: rem-calc(20) rem-calc(20);
+}
+
 #career {
 	background:url("../assets/img/career.png") no-repeat center center;
 	background-size:cover;
