@@ -77,3 +77,89 @@ $(window).scroll(function() {
 });
 
 $('#hello').addClass('visible');
+
+  /*
+$(window).scroll(function() {
+    if ($(window).scrollTop() > $('#todo').height()) {
+        $('#nav-todo').addClass('active');
+        $('#nav-in-the-life').removeClass('active');
+        $('#nav-inspired').removeClass('active');
+        $('#nav-feel-confused').removeClass('active');
+
+    }
+    
+   if ($(window).scrollTop() > $('#in-the-life').height()) {
+        $('#nav-in-the-life').addClass('active');
+        $('#nav-todo').removeClass('active');
+        $('#nav-inspired').removeClass('active');
+        $('#nav-feel-confused').removeClass('active');
+
+    }
+    
+    
+   if ($(window).scrollTop() > $('#inspired').height()) {
+        $('#nav-inspired').addClass('active');
+        $('#nav-todo').removeClass('active');
+        $('#nav-in-the-life').removeClass('active');
+        $('#nav-feel-confused').removeClass('active');
+
+    }
+    if ($(window).scrollTop() > $('#feel-confused').height()) {
+        $('#nav-todo').removeClass('active');
+        $('#nav-in-the-life').removeClass('active');
+        $('#nav-inspired').removeClass('active');
+        $('#nav-feel-confused').addClass('active');
+
+    }
+  
+    if ($(window).scrollTop() < 50 {
+        $('#nav-todo').removeClass('active');
+        $('#nav-in-the-life').removeClass('active');
+        $('#nav-inspired').removeClass('active');
+        $('#nav-feel-confused').removeClass('active');
+
+    };
+});*/
+
+// active menu li switch
+$(document).ready(function () {
+    $(document).on("scroll", onScroll);
+    
+    //smoothscroll
+    $('a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
+        $(document).off("scroll");
+        
+        $('a').each(function () {
+            $(this).removeClass('active');
+        })
+        $(this).addClass('active');
+      
+        var target = this.hash,
+            menu = target;
+        $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top+2
+        }, 500, 'swing', function () {
+            window.location.hash = target;
+            $(document).on("scroll", onScroll);
+        });
+    });
+});
+
+function onScroll(event){
+    var scrollPos = $(document).scrollTop();
+    $('.menu li a').each(function () {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        var refElementPos = refElement.position();
+        if (refElementPos.top -120  <= scrollPos ) {
+            $('.menu li a').removeClass("active-li");
+            currLink.addClass("active-li");
+        }
+        else{
+            currLink.removeClass("active-li");
+        }
+    });
+}
+

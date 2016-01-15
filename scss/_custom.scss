@@ -273,6 +273,18 @@ p {
 	ul {
 		background-color: transparent;
 	}
+    
+
+    li a{
+    	border-bottom: 2px solid rgba(0,0,0,0);
+    	padding:.7rem 0 !important;
+    	margin-left:2rem;
+    }
+
+	li a:hover{
+		border-bottom: 2px solid $dark-gray;
+		color: $light-gray;
+	}
 
 	object {
 		fill-color: $white;
@@ -407,6 +419,14 @@ footer{
 	border-right: 30px solid transparent;
 	border-bottom: 20px solid $white;
 }
+
+.active-li {
+	border-bottom: 2px solid $white !important;
+	
+}
+
+
+
 
 /*
 #hello {
