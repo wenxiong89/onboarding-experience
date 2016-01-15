@@ -359,11 +359,11 @@ footer{
 	border-right: 30px solid transparent;
 	border-top: 20px solid $white;
 
-	&.yellow{
+	&.green{
 	  position: absolute;
 	  border-left: 40px solid transparent;
 	  border-right: 40px solid transparent;
-      border-top: 30px solid $warning-color;
+      border-top: 30px solid $success-color;
       margin-top:rem-calc(-100);
 	}
     
@@ -371,7 +371,7 @@ footer{
 	  position: absolute;
 	  border-left: 40px solid transparent;
 	  border-right: 40px solid transparent;
-      border-top: 30px solid $primary-color;
+      border-top: 30px solid $secondary-color;
       margin-top:rem-calc(-100);
 	}
 
