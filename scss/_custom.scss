@@ -7,7 +7,7 @@ section {
 section#hello {
 	padding: rem-calc(100) 0;
 	color: $white;
-	background: url(../assets/img/countdown_bg.png) no-repeat center center;
+	background: url(../assets/img/onboarding_hero.jpg) no-repeat center center;
 	background-size: cover;
 
 	h1 {
@@ -42,7 +42,7 @@ section#hello {
 }
 
 section#welcome {
-	background-color: $warning-color;
+	background-color: $success-color;
 	color: $black;
 
 	hr {
@@ -66,6 +66,12 @@ section#welcome {
 	}
 }
 
+section#todo, section#decide, section#to-bring {
+	h3 {
+		color: $success-color;
+	}
+}
+
 section#decide {
 	background-color: $light-gray;
 }
@@ -80,6 +86,10 @@ section#to-bring, section#decide {
 }
 
 section#in-the-life {
+	h4 {
+		color: $secondary-color;
+	}
+
 	hr {
 		width: rem-calc(60);
 		border: 1px solid $dark-gray;
@@ -88,7 +98,9 @@ section#in-the-life {
 }
 
 section#culture {
-	background-color: $light-gray;
+	h3 {
+		color: $secondary-color;
+	}
 
 	hr {
 		width: rem-calc(60);
@@ -105,6 +117,10 @@ section#inspired {
 
 section#feel-confused {
 	background-color: $light-gray;
+
+	h3 {
+		color: $alert-color;
+	}
 
 	h4 {
 		margin-bottom: rem-calc(30);
@@ -169,7 +185,7 @@ section#feel-confused {
 }
 
 #quote {
-    background: url("../assets/img/Quote-image.png") no-repeat center center;
+    background: url("../assets/img/doug-powell.png") no-repeat center center;
     background-size: cover;
 
     h2 {
@@ -188,10 +204,11 @@ section#feel-confused {
 }
 
 #quote-2 {
-	background-color: $alert-color;
+	background: $alert-color url(../assets/img/oen-hammonds.png) no-repeat center center;
+	background-size: cover;
 
 	h2 {
-		font-size: 4em;
+		font-size: 3.8em;
 	}
 
 	@include breakpoint(small down) {
@@ -291,25 +308,6 @@ p {
 
 .header {
 	margin-bottom: rem-calc(60);
-
-	h3 {
-		color: $secondary-color;
-	}
-
-	.accent {
-		display: inline-block;
-		border-bottom: 3px solid $secondary-color;
-	}
-
-	&.header-2 h3 {
-		color: $success-color;
-		border-color: $success-color;
-	}
-
-	&.header-3 h3 {
-		color: $alert-color;
-		border-color: $alert-color;
-	}
 }
 
 button {
@@ -322,17 +320,22 @@ button {
 blockquote {
 	border: none;
 	color: $white;
+
+	h2 {
+		text-indent: -0.2in;
+		line-height: 1.2;
+	}
  	
  	cite {
 		font-family: $header-font-family;
 		font-style: normal;
-		font-size: 2em;
+		font-size: 1.5em;
 		color: $white;
 	}
 
 	@include breakpoint(small down) {
 		cite {
-			font-size: 1.5em;
+			font-size: 1em;
 		}
 	}
 }
@@ -368,11 +371,11 @@ footer{
 	border-right: 30px solid transparent;
 	border-top: 20px solid $white;
 
-	&.yellow{
+	&.green{
 	  position: absolute;
 	  border-left: 40px solid transparent;
 	  border-right: 40px solid transparent;
-      border-top: 30px solid $warning-color;
+      border-top: 30px solid $success-color;
       margin-top:rem-calc(-100);
 	}
     
@@ -380,7 +383,7 @@ footer{
 	  position: absolute;
 	  border-left: 40px solid transparent;
 	  border-right: 40px solid transparent;
-      border-top: 30px solid $primary-color;
+      border-top: 30px solid $secondary-color;
       margin-top:rem-calc(-100);
 	}
 
