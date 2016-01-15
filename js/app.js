@@ -67,45 +67,40 @@ if (personalInfo.startDate) {
 
 var $top = $('.top-bar');
 
-/* change the nav bar*/
-$(window).scroll(function() {
-    if( $(window).scrollTop() > 0 ) {
-        $top.addClass('show-nav').removeClass('hide-nav');
-    } else {
-        $top.addClass('hide-nav').removeClass('show-nav');
-    }
-});
-
 $('#hello').addClass('visible');
 
-// active menu li switch
-$(document).ready(function () {
-    $(document).on("scroll", onScroll);
+$(document).on("scroll", onScroll);
+
+//smoothscroll
+$('a[href^="#"]').on('click', function (e) {
+    e.preventDefault();
+    $(document).off("scroll");
     
-    //smoothscroll
-    $('a[href^="#"]').on('click', function (e) {
-        e.preventDefault();
-        $(document).off("scroll");
-        
-        $('a').each(function () {
-            $(this).removeClass('active');
-        })
-        $(this).addClass('active');
-      
-        var target = this.hash,
-            menu = target;
-        $target = $(target);
-        $('html, body').stop().animate({
-            'scrollTop': $target.offset().top+2
-        }, 500, 'swing', function () {
-            window.location.hash = target;
-            $(document).on("scroll", onScroll);
-        });
+    $('a').each(function () {
+        $(this).removeClass('active');
+    })
+    $(this).addClass('active');
+  
+    var target = this.hash,
+        menu = target;
+    $target = $(target);
+    $('html, body').stop().animate({
+        'scrollTop': $target.offset().top+2
+    }, 500, 'swing', function () {
+        window.location.hash = target;
+        $(document).on("scroll", onScroll);
     });
 });
 
 function onScroll(event){
     var scrollPos = $(document).scrollTop();
+
+    if( scrollPos > 0 ) {
+        $top.addClass('show-nav').removeClass('hide-nav');
+    } else {
+        $top.addClass('hide-nav').removeClass('show-nav');
+    }
+
     $('.menu li a').each(function () {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
