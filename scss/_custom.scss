@@ -42,23 +42,32 @@ section#hello {
 }
 
 section#welcome {
-	background-color: $success-color;
-	color: $black;
+	background: $success-color url(../assets/img/welcome.png) no-repeat center center;
+	background-position: right center;
+	background-size: 50% auto;
+
+	h1 {
+		color: $white;
+	}
 
 	hr {
 		width: rem-calc(80);
-		border: 1px solid $black;
+		border: 1px solid $white;
 		margin: rem-calc(40) 0 rem-calc(20);
 	}
 
 	img {
 		border-radius: rem-calc(180);
+	}
 
-
+	@include breakpoint(medium down) {
+		background-position: 150% center;
+		background-size: auto 100%;
 	}
 
 	@include breakpoint(small down) {
-			padding: rem-calc(60) 0;
+		padding: rem-calc(60) 0;
+		background: $success-color;
 
 		img {
 			margin-bottom: rem-calc(60);
