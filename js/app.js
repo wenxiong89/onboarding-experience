@@ -51,8 +51,7 @@ function initializeClock(id, endtime){
 
 /* Get name and start date from personalized URL */
 var personalInfo = {
-	firstName: getParameterByName("fn") || "IBMer",
-	lastName: getParameterByName("ln") || null,
+	firstName: getParameterByName("name") || "IBMer",
 	startDate: getParameterByName("sd") || null
 }
 
